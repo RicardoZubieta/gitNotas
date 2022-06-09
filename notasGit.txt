@@ -1,0 +1,149 @@
+Notas git
+
+*/nota de la clase 2/*
+// es necesario tener una configuracion adecuada para crear commit:
+git config sirve para mostrar como funciona.
+git conofig --list sirve para mostrar una lista para ver la configuracion por defecto de tu git y las cosas que faltan.
+git config --list --show-origin sirve para ver donde esta guardadas las configuraciones.
+git config --global user.name "nombre" sirve para cambiar configuraciones globales como el nombre de usuario.
+git config --global user.email "correo" sirve para cambiar la configuracion del correo.
+" dato :un - indica letras para acceder rapido a un comando, -- indica una palabra"
+
+*/notas 1, clase 1 introduccion a la terminal/*
+*/ git bash, es la terminal que abriremos /*
+// comandos:
+pwd sirve para ver en que carpeta estamos.
+cd + / sirve para ubicarte en el home, del disco curo.
+ls sirve para listar los archivos que tengo en la raiz.
+ls -l sirve para mostrar los archivos.
+ls -al sirve para traer  argumentos especiales al comando incluso los ocultos.
+ls -a srive para mostrar los archivos pero agrupados no en lista como el anterior.
+clear sirve para limpiar la consola.
+ctrl l sirve para limpiar la consola.
+cd /c sirve para ubicarte dentro del disco duro.
+cd user sirve para ubicarte en la carpeta de usuario dentro del disco duro c.
+cd .. sirve para volver a la carpeta anterior.
+mkdir sirve para crear una carpeta.
+touch sirve para crear archivos vacios.
+cd . especifica la carpeta actual.
+cat sirve para mostrar el contenido de un archivo.
+history sirve para mostrat todos los comandos realizados
+!#deComandoRealizado sirve para repetir un comando ya realizado en history.
+rm "archivo" sirve para borrar un archivo.
+comando --help sirve para mostrar una serie de explicaciones de como funciona cada uno de los comandos.//
+
+*/investigacion/*
+*/ ¿Cómo eliminar completamente un repositorio git creado con init? /*
+// para borrar un directorio o carpeta .git
+donde se encuentra el repositorio se usa el comando 
+rm -rf .git     "es importante estar en la carpeta
+donde se encuentra el proyecto. 
+https://www.web-dev-qa-db-es.com/es/git/como-eliminar-completamente-un-repositorio-git-creado-con-init/967436662/
+//
+
+
+
+
+*/ notas 2 , clase 2,  continuacion creacion de repositorio y primer commit/* 
+// comandos:
+git init sirve para crear un repositorio y este se crea en la carpeta donde se desarrollara el proyecto.
+code se puede escribir code en git bash para abrilo.
+git status sirve para ver el estado del proyecto.
+git add "archivo" sirve para agregar los cambios realizados.
+git rm sirve para sacar un archivo o documento, es decir borrarlo.
+git rm --cached sirve para borrar el add de un archivo, es decir volver al estado inicial.
+git commit -m "mensaje" sirve para agregar al repositorio los cambios realizados, -m hace referencia a un mensaje que dejaremos en el repositorio para quienes deseen ver que ocurrio o por que se hizo el cambio.
+code "archivo" sirve para abrir de manera directa el archivo.
+git add . sirve para agregar todos los archivos y cambios realizados dentro de la carpteta. el "." hace referencia a la carpeta actual.
+git log "archivo" sirve para ver la historia del archivo, como cambios realizados.
+
+* comentarios: el numero largo que parece a lado del commit en un git log 
+es un codigo que hace referencia al archivo modificado,es la manera en que se identifica ese cambio 
+el head master hace referencia a que ese es el archivo que esta actualmente guardado y es la version final.
+
+
+*/ notas 3 , clase 3,  continuacion analisis de cambios en archivos/* 
+// comandos:
+git show "archivo" sirve para mostrar los cambios que ha tenido un archivo.
+scape shift zz sirve para salir del commit cuando no se mando un mensaje y fuerza el commit para env.
+git diff "copiar indicador commit + espacio + copiar indicador commit a comparar" sirve para comparar versiones entre commits.
+
+
+*/ notas 4 , clase 4,  reset y checkout/* 
+// comandos:
+git reset "codigo commit" --hard sirve para volver a una version anterior del archivo, con el hard todo vuelve a la version anterior.
+git reset "codigo commit" --soft sirve para para volver a la version anterio pero lo que se tenga en stagin sigue ahi.
+git checkout "master o codigo indicador commit" + "nombre archivo"
+git log --stat "sirve para ver cambios.
+
+
+*/ notas 5 , clase 5,  git reset vs git rm/* 
+// documento copiado de la clase:
+git rm
+Este comando nos ayuda a eliminar archivos de Git sin eliminar su historial del sistema de versiones.
+Esto quiere decir que si necesitamos recuperar el archivo solo debemos “viajar en el tiempo” y recuperar
+el último commit antes de borrar el archivo en cuestión.
+
+Recuerda que git rm no puede usarse así nomás. Debemos usar uno de los flags para indicarle a Git 
+cómo eliminar los archivos que ya no necesitamos en la última versión del proyecto:
+
+
+git rm --cached: Elimina los archivos de nuestro repositorio local y del área de staging, pero los mantiene en nuestro disco duro. 
+Básicamente le dice a Git que deje de trackear el historial de cambios de estos archivos, por lo que pasaran a un estado untracked.
+
+git rm --force: Elimina los archivos de Git y del disco duro. Git siempre guarda todo, 
+or lo que podemos acceder al registro de la existencia de los archivos, de modo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).
+
+git reset Este comando nos ayuda a volver en el tiempo. Pero no como git checkout que nos deja ir, mirar, pasear y volver.
+Con git reset volvemos al pasado sin la posibilidad de volver al futuro. Borramos la historia y la debemos sobreescribir. No hay vuelta atrás.
+
+Este comando es muy peligroso y debemos emplearlo solo en caso de emergencia. Recuerda que debemos usar alguna de estas dos opciones:
+
+Hay dos formas de utilizar git reset: 
+con el argumento --hard, borrando toda la información que tengamos en el área de staging (y perdiendo todo para siempre). 
+O, un poco más seguro, con el argumento --soft, que mantiene allí los archivos del área de staging para que podamos aplicar nuestros últimos cambios pero desde un commit anterior.
+
+git reset --soft: Borramos todo el historial y los registros de Git pero guardamos los cambios que tengamos en Staging,
+así podemos aplicar las últimas actualizaciones a un nuevo commit.
+
+git reset --hard: Borra todo. Todo todito, absolutamente todo. 
+Toda la información de los commits y del área de staging se borra del historial.
+
+¡Pero todavía falta algo!
+
+git reset HEAD: Este es el comando para sacar archivos del área de staging. No para borrarlos ni nada de eso, 
+solo para que los últimos cambios de estos archivos no se envíen al último commit, a menos que cambiemos de opinión y 
+los incluyamos de nuevo en staging con git add, por supuesto. //
+
+
+" comentarios : stagin es donde estan los cambios, papra agregaro al repositorio se tiene que usar el commit"
+
+
+*/ notas 6 , clase 6 flujo de trabajo basico en repositorio  /* 
+// comentarios:
+git clon url
+sirve para obetenr un archivo de un repositorio remoto, 
+y traerlo al directorio de trabajo y a tu repositorio local.
+para guardar cambios se sigue guardadno con git add . y git commit,
+pero para enviarlos el repositorio remoto se utiliza:
+git push sirve para enviar el head master al servidor remoto.
+git fetch sirve para traer una actualizacion del repositorio remoto al local, pero no lo copia en los archivos.
+git merge para copiarlo en los archivos hay que fucionar los archivos. despues del git fetch.
+git pull sirve para tener la copia actualizada de repositorios y directorio.
+
+
+notas 7, clase 7 introduccion a las ramas.
+branch "nombre de la rama a crear" sirve para crear una rama diferente a la rama master, esta es una copia de la mismia, 
+sin embargo ahora funcionaran como 2 versiones diferentes en las que puedes trabajar.
+
+git checkout: para cambiar entre ramas se utiliza el git checkout "nombre de la rama a trabajar".
+
+ejemplo :
+git checkout master (rama principal);
+git checkout copiamaster (rama secundaria);
+
+es importante que al hacer cambios dentro de una de las ramas se guarden los cambios
+con git add . o git commit -am "mensjae".
+
+git merge sirve para funcionar las ramas principal y secundaria.
+es necesario realizar el merge dentro de la rama que se desea que sea la principal.
