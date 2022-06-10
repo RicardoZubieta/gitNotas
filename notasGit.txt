@@ -169,7 +169,9 @@ puede salir una advertencia por que no hay commits comunes, se soluciona con:
 git pull origin master --allow-unrelated-histories; srive para fucionar estos archivos y asi poder hacer el merge.
 de esta manera traera el readme.md que se puede vizualizar con el ls -al
 despues de esto se puede hacer el : 
-git push origin master
+git push origin master. 
+
+tratando de mandar cambios desde github.
 
 
 
