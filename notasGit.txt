@@ -147,3 +147,30 @@ con git add . o git commit -am "mensjae".
 
 git merge sirve para funcionar las ramas principal y secundaria.
 es necesario realizar el merge dentro de la rama que se desea que sea la principal.
+
+
+*/ notas 8, clase uso de git hub*/
+// apuntes: GitHub.
+primeroo; crear nuevo repositorio.
+segundo; llenar, nombre de repositorio, publico o privado, inicializar con readme.
+
+como enviar la informacion a githunb.
+
+copiar url https de github, para colocarlo en la terminal.
+git remote add origin master "+url git hub del repositorio" ; sirve para añadir el origen al master.
+git remote; para ver que existe el origin.
+git remote -v; sirve para vizualizar el fetch y el push de origin.
+git push origin master; sirve para enviar al origen la rama master.
+puede salir una ventana de inicio de sesion. puede salir un error por que no se tienen las mismas hisotiras, y 
+esto se debe a que se creo un nuevo master en git hub.
+se soluciona con:
+git pull origin master; para enviar las historias commit.
+puede salir una advertencia por que no hay commits comunes, se soluciona con:
+git pull origin master --allow-unrelated-histories; srive para fucionar estos archivos y asi poder hacer el merge.
+de esta manera traera el readme.md que se puede vizualizar con el ls -al
+despues de esto se puede hacer el : 
+git push origin master
+
+
+
+
