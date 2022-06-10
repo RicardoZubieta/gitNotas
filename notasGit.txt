@@ -179,5 +179,14 @@ github. para enviar la informacion de la consola a github se usa el git push ori
 
 */clase 9, llave spublicas y privadas./*
 configurar tus llaves publicas y privadas.
+las llaves se conectan con el protocolo ssh
 
-
+para crear la llave, crearla desde cd home.
+comando: ssh-keygen -t -rsa -b 4096 -C "correo"
+las llaves se debebn guardad en una nueva carpeta .ssh, desde ahi se copian.
+para ver que las llaves esten corriendo, comando:
+$ eval $(ssh-agent -s)
+luego se agrega la llave.
+colocar signo de la ñ; se pone con alt + tecla corcho cierre. ~
+comnado para agragar la llave:
+ssh-add ~/.ssh/id_rsa
