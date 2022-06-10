@@ -171,7 +171,10 @@ de esta manera traera el readme.md que se puede vizualizar con el ls -al
 despues de esto se puede hacer el : 
 git push origin master. 
 
-tratando de mandar cambios desde github.
+se puede modificar el archivo desde github, seleccionando editar archivo, 
+recuerda dejar descripcion de commit antes de enviar la informacion desde github. 
+importante actualizar la consola con git pull origin master para traer la informacion desde 
+github. para enviar la informacion de la consola a github se usa el git push origin master.
 
 
 
