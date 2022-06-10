@@ -177,5 +177,7 @@ importante actualizar la consola con git pull origin master para traer la inform
 github. para enviar la informacion de la consola a github se usa el git push origin master.
 
 
+*/clase 9, llave spublicas y privadas./*
+configurar tus llaves publicas y privadas.
 
 
