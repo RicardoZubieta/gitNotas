@@ -221,4 +221,5 @@ para empujar las ramas al origin es:
 ubicarse en la rama con git chekout.
 traer la version de origin con git pull origin master y luego enviar con 
 git push origin "rama" ; la rama a enviar.
-
+git branch header; ramas
+git branch footer; ramas
