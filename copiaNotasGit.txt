@@ -1,4 +1,4 @@
-Notas git
+Notas git actualizando la copia  :)
 
 */nota de la clase 2/*
 // es necesario tener una configuracion adecuada para crear commit:
@@ -36,7 +36,7 @@ comando --help sirve para mostrar una serie de explicaciones de como funciona ca
 */ ¿Cómo eliminar completamente un repositorio git creado con init? /*
 // para borrar un directorio o carpeta .git
 donde se encuentra el repositorio se usa el comando 
-rm -rf .git     "es importante estar en la carpetacd 
+rm -rf .git     "es importante estar en la carpeta
 donde se encuentra el proyecto. 
 https://www.web-dev-qa-db-es.com/es/git/como-eliminar-completamente-un-repositorio-git-creado-con-init/967436662/
 //
@@ -67,9 +67,6 @@ el head master hace referencia a que ese es el archivo que esta actualmente guar
 git show "archivo" sirve para mostrar los cambios que ha tenido un archivo.
 scape shift zz sirve para salir del commit cuando no se mando un mensaje y fuerza el commit para env.
 git diff "copiar indicador commit + espacio + copiar indicador commit a comparar" sirve para comparar versiones entre commits.
-
-
-
 
 
 */ notas 4 , clase 4,  reset y checkout/* 
@@ -133,3 +130,96 @@ git push sirve para enviar el head master al servidor remoto.
 git fetch sirve para traer una actualizacion del repositorio remoto al local, pero no lo copia en los archivos.
 git merge para copiarlo en los archivos hay que fucionar los archivos. despues del git fetch.
 git pull sirve para tener la copia actualizada de repositorios y directorio.
+
+
+notas 7, clase 7 introduccion a las ramas.
+branch "nombre de la rama a crear" sirve para crear una rama diferente a la rama master, esta es una copia de la mismia, 
+sin embargo ahora funcionaran como 2 versiones diferentes en las que puedes trabajar.
+
+git checkout: para cambiar entre ramas se utiliza el git checkout "nombre de la rama a trabajar".
+
+ejemplo :
+git checkout master (rama principal);
+git checkout copiamaster (rama secundaria);
+
+es importante que al hacer cambios dentro de una de las ramas se guarden los cambios
+con git add . o git commit -am "mensjae".
+
+git merge sirve para funcionar las ramas principal y secundaria.
+es necesario realizar el merge dentro de la rama que se desea que sea la principal.
+
+
+*/ notas 8, clase uso de git hub*/
+// apuntes: GitHub.
+primeroo; crear nuevo repositorio.
+segundo; llenar, nombre de repositorio, publico o privado, inicializar con readme.
+
+como enviar la informacion a githunb.
+
+copiar url https de github, para colocarlo en la terminal.
+git remote add origin  "+url git hub del repositorio" ; sirve para añadir el origen al master.
+git remote; para ver que existe el origin.
+git remote -v; sirve para vizualizar el fetch y el push de origin.
+git push origin master; sirve para enviar al origen la rama master.
+puede salir una ventana de inicio de sesion. puede salir un error por que no se tienen las mismas hisotiras, y 
+esto se debe a que se creo un nuevo master en git hub.
+se soluciona con:
+git pull origin master; para enviar las historias commit.
+puede salir una advertencia por que no hay commits comunes, se soluciona con:
+git pull origin master --allow-unrelated-histories; srive para fucionar estos archivos y asi poder hacer el merge.
+de esta manera traera el readme.md que se puede vizualizar con el ls -al
+despues de esto se puede hacer el : 
+git push origin master. 
+
+se puede modificar el archivo desde github, seleccionando editar archivo, 
+recuerda dejar descripcion de commit antes de enviar la informacion desde github. 
+importante actualizar la consola con git pull origin master para traer la informacion desde 
+github. para enviar la informacion de la consola a github se usa el git push origin master.
+
+
+*/clase 9, llave spublicas y privadas./*
+configurar tus llaves publicas y privadas.
+las llaves se conectan con el protocolo ssh
+
+para crear la llave, crearla desde cd home.
+comando: ssh-keygen -t -rsa -b 4096 -C "correo"
+las llaves se debebn guardad en una nueva carpeta .ssh, desde ahi se copian.
+para ver que las llaves esten corriendo, comando:
+$ eval $(ssh-agent -s)
+luego se agrega la llave.
+colocar signo de la ñ; se pone con alt + tecla corcho cierre. ~
+comnado para agragar la llave:
+ssh-add ~/.ssh/id_rsa
+
+
+clase 10, tags iy versiones:
+
+git log --all --graph; sirve para ver el historial de los branches.
+git log --all --graph --decorate --oneline; muestra todo mas comprimido.
+
+se pueden crear alias a los comandos usando:
+ejemplo;
+alis arbol="git log --all --graph --decorate --oneline"
+agregando tags a commits para encontarlos mas rapido:
+git tag -a "nombre" -m "resultado ....."  "copias el hash para el tag  4f0a0e0 "
+ejmplo: git tag -a v0.1 -m " resultado anterior de una version del curso" 84f8a2d
+git tag; sirve para ver la lista de los tag que tenemos.
+git show-ref --tags; sirve para ver a que estan conectados los tags.
+git push origin --tags; sirve para enviar los tags a github.
+git tag -d "nombre_tag" ; para borrar un tag de manera interna.
+git push origin :refs/tags/"nombre_tag" ; sirve para borralo en github.
+
+
+
+clase 11, manejo de ramas en github.
+git branch; ver ramas
+git checkout moverse entre ramas.
+git show-branch; ramas qque existen y su historia
+git show-branch --all; sirve para ver las ramas que existen y su historia pero con mas datos.
+gitk; abre en un software la historia de una manera super vizual.
+para empujar las ramas al origin es:
+ubicarse en la rama con git chekout.
+traer la version de origin con git pull origin master y luego enviar con 
+git push origin "rama" ; la rama a enviar.
+git branch header; ramas
+git branch footer; ramas

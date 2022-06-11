@@ -1,4 +1,4 @@
-Notas git
+Notas git actualizando la copia  :)
 
 */nota de la clase 2/*
 // es necesario tener una configuracion adecuada para crear commit:
@@ -224,3 +224,5 @@ git push origin "rama" ; la rama a enviar.
 
 
 git clone para pegar un url https desde github para copiar un proyecto.
+git branch header; ramas
+git branch footer; ramas
