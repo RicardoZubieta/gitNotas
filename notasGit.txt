@@ -157,7 +157,7 @@ segundo; llenar, nombre de repositorio, publico o privado, inicializar con readm
 como enviar la informacion a githunb.
 
 copiar url https de github, para colocarlo en la terminal.
-git remote add origin master "+url git hub del repositorio" ; sirve para añadir el origen al master.
+git remote add origin  "+url git hub del repositorio" ; sirve para añadir el origen al master.
 git remote; para ver que existe el origin.
 git remote -v; sirve para vizualizar el fetch y el push de origin.
 git push origin master; sirve para enviar al origen la rama master.
