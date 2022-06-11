@@ -222,3 +222,5 @@ ubicarse en la rama con git chekout.
 traer la version de origin con git pull origin master y luego enviar con 
 git push origin "rama" ; la rama a enviar.
 
+
+git clone para pegar un url https desde github para copiar un proyecto.
