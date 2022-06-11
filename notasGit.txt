@@ -1,4 +1,4 @@
-Notas git
+Notas git actualizando la copia  :)
 
 */nota de la clase 2/*
 // es necesario tener una configuracion adecuada para crear commit:
