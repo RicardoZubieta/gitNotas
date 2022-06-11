@@ -209,3 +209,16 @@ git push origin --tags; sirve para enviar los tags a github.
 git tag -d "nombre_tag" ; para borrar un tag de manera interna.
 git push origin :refs/tags/"nombre_tag" ; sirve para borralo en github.
 
+
+
+clase 11, manejo de ramas en github.
+git branch; ver ramas
+git checkout moverse entre ramas.
+git show-branch; ramas qque existen y su historia
+git show-branch --all; sirve para ver las ramas que existen y su historia pero con mas datos.
+gitk; abre en un software la historia de una manera super vizual.
+para empujar las ramas al origin es:
+ubicarse en la rama con git chekout.
+traer la version de origin con git pull origin master y luego enviar con 
+git push origin "rama" ; la rama a enviar.
+
