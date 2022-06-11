@@ -226,3 +226,7 @@ git push origin "rama" ; la rama a enviar.
 git clone para pegar un url https desde github para copiar un proyecto.
 git branch header; ramas
 git branch footer; ramas
+
+
+
+que tal va todo ===
