@@ -227,6 +227,16 @@ git clone para pegar un url https desde github para copiar un proyecto.
 git branch header; ramas
 git branch footer; ramas
 
+clase 12, haciendo merge de ramas.
+imagenes; son archivos binarios, no se deberian agregar a repositorios.
+normalmente se utiliza otra rama diferente a master para trabajar.
+añadir la carpeta imagenes y la imagen de la carpte con:
+git add imagenes/"nombre_imagen".png
+despues de agregarlo hacer un commit.
+traer con git pull origin header los cambios de header, y luego 
+enviafr los cambias hechos con guardadnoit push origin header. para envias las
+imagenes actualizadas o nuevas imagenes.
 
 
-que tal va todo ===
+
+que tal va todo === que pasa con los cambios.
