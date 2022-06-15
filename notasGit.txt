@@ -227,6 +227,23 @@ git clone para pegar un url https desde github para copiar un proyecto.
 git branch header; ramas
 git branch footer; ramas
 
+clase 12, haciendo merge de ramas.
+imagenes; son archivos binarios, no se deberian agregar a repositorios.
+normalmente se utiliza otra rama diferente a master para trabajar.
+añadir la carpeta imagenes y la imagen de la carpte con:
+git add imagenes/"nombre_imagen".png
+despues de agregarlo hacer un commit.
+traer con git pull origin header los cambios de header, y luego 
+enviafr los cambias hechos con guardadnoit push origin header. para envias las
+imagenes actualizadas o nuevas imagenes.
 
+clase 13, utilizando pull request en git hub.
+ubicarnos en master y hacer el pull de origin master, la ultima version que hay en git hub.
+crear nueva rama para agregar un error:
+git branch fix-typo; nueva rama.
+git branch para ver si se creo la rama.
+git checkout para ir a la nueva rama.
+despues de esto los cambios relizados se chekan con el pull request
+en github, ahi hacemos la comparacion y solicitamos el merge de la rama.
 
-que tal va todo ===
+que tal va todo === que pasa con los cambios.
