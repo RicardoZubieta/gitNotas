@@ -237,6 +237,17 @@ traer con git pull origin header los cambios de header, y luego
 enviafr los cambias hechos con guardadnoit push origin header. para envias las
 imagenes actualizadas o nuevas imagenes.
 
+clase 13, utilizando pull request en git hub.
+ubicarnos en master y hacer el pull de origin master, la ultima version que hay en git hub.
+crear nueva rama para agregar un error:
+git branch fix-typo; nueva rama.
+git branch para ver si se creo la rama.
+git checkout para ir a la nueva rama.
+despues de esto los cambios relizados se chekan con el pull request
+en github, ahi hacemos la comparacion y solicitamos el merge de la rama.
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3662b0b770e5a84172f6c6342485ff8bba18f084
 que tal va todo === que pasa con los cambios.
