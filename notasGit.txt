@@ -246,4 +246,7 @@ git checkout para ir a la nueva rama.
 despues de esto los cambios relizados se chekan con el pull request
 en github, ahi hacemos la comparacion y solicitamos el merge de la rama.
 
-que tal va todo === que pasa con los cambios.
+
+
+que tal va todo === que pasa con los cambios. 
+iniciamos de nuevo 21 de junio.
