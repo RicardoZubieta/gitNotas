@@ -247,6 +247,10 @@ despues de esto los cambios relizados se chekan con el pull request
 en github, ahi hacemos la comparacion y solicitamos el merge de la rama.
 
 
+clase 14, fork
+fork sirve papra clonar el proyecto desde git hub, despues de clonar es necesario
+agrgarlo a la terminal de comando. usando el git clone copiando la url. 
+
 
 que tal va todo === que pasa con los cambios. 
 iniciamos de nuevo 21 de junio.
