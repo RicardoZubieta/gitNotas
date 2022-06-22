@@ -278,3 +278,6 @@ de preferencia agregar este tipo de archivos antes de cargar imagenes.
 clase 17, readme.
 README.md es una buena practica, que sirve para la descrippcion del proyecto.
 .md significa Markdown, es ocmo un lengujae intermedio, no es html y tampoco es un texto plano.
+
+link de la pagina de editor para el readme: 
+https://pandao.github.io/editor.md/en.html

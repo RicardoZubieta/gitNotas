@@ -1,4 +1,4 @@
-# gitNotas :tw-1f47d: :tw-1f47d: :tw-1f47d:
+# gitNotas :😁👍🧐
 Mis apuntes de git & github.
 
 Esta es una prueba para el editor, que nos srive para ver como quedaria este **readme.md . **
@@ -9,4 +9,4 @@ Esta es una prueba para el editor, que nos srive para ver como quedaria este **r
 3; *buenas practicas*
 
 
- **FIN DEL CONTENIDO PRACTICO **:tw-1f647:
+ **FIN DEL CONTENIDO PRACTICO ** 🤖👨‍💻
