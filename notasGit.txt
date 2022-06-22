@@ -281,3 +281,14 @@ README.md es una buena practica, que sirve para la descrippcion del proyecto.
 
 link de la pagina de editor para el readme: 
 https://pandao.github.io/editor.md/en.html
+
+
+clase 18, GitHub pages: https://pages.github.com/
+
+verificar que el repositorio tenga :
+username.github.io
+para ver el link del repositorio tenemos que ir a settings, pages.
+ahi verificamos que lo que se muestre es la rama master.
+para motrar exactemente un archivo del repositorio se hace lo siguiente:
+https://ricardozubieta.github.io/gitNotas    : este mostrara el readme.
+https://ricardozubieta.github.io/gitNotas/blogpost.html   : este muestra el archivo html.
