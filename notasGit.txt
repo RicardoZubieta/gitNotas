@@ -311,4 +311,7 @@ git rebase master para poder juntar las ramas.
 nota el rebase se hace tanto la rama experimento es decir
 la rama donde esta la correcion, y en la rama master.
  primero debe hacerse en la rama donde se hace la correcion y luego en la rama masrter.
+ despues de combinar las historias procedemos a elimnar la rama creada 
+ para cooreccion de errores.
+ git branch -D "rama".
  
