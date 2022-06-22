@@ -347,4 +347,15 @@ la rama donde esta la correcion, y en la rama master.
  de esta manera borramos los cambios.
  sirve mas bien para cambios rapidos.
 
- 
+ clase 21, git clean;
+ se utiliza para limpiar archivos de tu proyecto
+ no desados. 
+
+ comando; 
+ git status para ver los archivos basura que se agregaron de mas
+ git clean; no funciona solo hay que usar:
+ git clean --dry--run 
+ despues de que este comando muestre los archivos a borrar, los verificamos 
+ y hacemos el comando;
+ git clean -f ; srive para borrar los archivos no deseadoss..
+ con estos solo borramos archivos no carpetas.
