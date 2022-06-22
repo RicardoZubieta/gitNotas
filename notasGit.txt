@@ -268,7 +268,16 @@ clase 15, haciendo deployment a un servidor.
 
 
 clase 16, ignorando archivos;
-se crea un archivo en la raiz de nuestro proyecto, se crea de la siguiente manera:
+se crea un archivo en la raiz de nuestro proyecto, se crea de la siguiente manera en visual estudio pero dentro de la carpta raiz:
 .gitignore; dentro del arcivo se hace lo siguiente:
 *.jpg    : el asterisco significa todos los archivos, para esta indicacion , 
 hacemos referencia a ignorar todos los archivos de tipo jpg
+
+de preferencia agregar este tipo de archivos antes de cargar imagenes.
+
+clase 17, readme.
+README.md es una buena practica, que sirve para la descrippcion del proyecto.
+.md significa Markdown, es ocmo un lengujae intermedio, no es html y tampoco es un texto plano.
+
+link de la pagina de editor para el readme: 
+https://pandao.github.io/editor.md/en.html
