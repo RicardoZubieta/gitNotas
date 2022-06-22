@@ -365,3 +365,18 @@ la rama donde esta la correcion, y en la rama master.
 
  git log --oneline; forma corta de ver la historio de commits
  git cherry-pick "pegar los datos del coommit a traer de otra rama"
+ te puedes posicionar en la rama donde desear traer el commit de otra rama, 
+ uilizar el cherry para traer esa ifnormacion a la rama y guardarla en tu rama actual.
+
+
+clase 23 , gir reset y git reflog.
+git reflog sirve para ver todo , hasta lo que perdimos o borramos.
+ahi podemos buscar el ultimo coomit donde esta toda la informacion que necesitamos
+ANTES DE SER BORRADA. ES DECIR COMMITS ANTERIORES CON TODA LA INFORMACION. AHI SELECCIONAMOS
+LOS DATOS DEL COMMIT.
+y con el comando 
+Git reset "pegar datos de commit buscados en git reflog"
+git reset --soft "pegar datos de commit buscados en git reflog"
+git reset --hard "pegar datos de commit buscados en git reflog"
+
+nota; normalmente el mas utilizado es el git reset --hard "datos coommit"

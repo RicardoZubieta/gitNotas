@@ -18,10 +18,7 @@ master 1.
 master 2.
 
 probaremos el stash y la creacion 
-<<<<<<< HEAD
 de ramas con stash y el cherry. si funciono.
-=======
 de ramas con stash y el cherry.
 agregarando mas commmits
 commite de pureba para el ejercicio
->>>>>>> ramaPrueba
