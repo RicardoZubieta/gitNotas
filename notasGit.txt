@@ -252,7 +252,14 @@ en github, ahi hacemos la comparacion y solicitamos el merge de la rama.
 clase 14, fork
 fork sirve papra clonar el proyecto desde git hub, despues de clonar es necesario
 agrgarlo a la terminal de comando. usando el git clone copiando la url. 
+cono esto nos traemos el proyecto, y podemos mandar cambios pero estos deben ser autorizados.
+cuando el proyecto real se actualiza, el de nosotros no lo estara asi que se hace lo siguiente.
+creamos otro origen remoto pero en lugar de origin usamos upstream.
 
+git remote  add upstream "url nueva del repositorio actualizado" ; se crea
+para actualizar la informacion de mi terminal con el repositorio actualizado, 
+tomando en cuenta que esto es cuando trabajo como un externo en un proyecto.
+despues es necesario mandar esta nueva rama al master que tenemos.
 
 que tal va todo === que pasa con los cambios. 
 iniciamos de nuevo 21 de junio.
