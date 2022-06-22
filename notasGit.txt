@@ -332,3 +332,19 @@ la rama donde esta la correcion, y en la rama master.
  para ver el cambio del stash
  usamos git stash pop, si no queremos esos cambios solo usamos contrl z en el vcode, para regresar a la iformacion anterior y ahi si guardamos con 
  control s, los cambios y si revisamos con git status noy modificacion en la terminal.
+
+ si queremos guardar el stash pordemos crear una nueva rama y guardarlo ahi:
+ ejemplo:
+ git stash
+ git stash list para ver que pasa
+ git stash branch "nombre de la rama nueva"
+ ya estando en la nueva rama podemos usar git status para ve rlos cambios, 
+ guardamos los cambios en la nueva rama.
+
+ nota: auqnue haya hecho cambios en mis archivos, y los haya guardado en los archivos vcode.
+ podemos usar el git stash en la terminal y asi recurar el head anterior. sin esos cambios.
+ para borrar el stash usamos: git stash drop.
+ de esta manera borramos los cambios.
+ sirve mas bien para cambios rapidos.
+
+ 
