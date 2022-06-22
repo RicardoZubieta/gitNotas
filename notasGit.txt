@@ -79,6 +79,8 @@ git log --stat "sirve para ver cambios.
 
 */ notas 5 , clase 5,  git reset vs git rm/* 
 // documento copiado de la clase:
+
+rm "nombre del archivo" se pueden eliminar archivos.
 git rm
 Este comando nos ayuda a eliminar archivos de Git sin eliminar su historial del sistema de versiones.
 Esto quiere decir que si necesitamos recuperar el archivo solo debemos “viajar en el tiempo” y recuperar
@@ -199,7 +201,7 @@ git log --all --graph --decorate --oneline; muestra todo mas comprimido.
 
 se pueden crear alias a los comandos usando:
 ejemplo;
-alis arbol="git log --all --graph --decorate --oneline"
+alias arbol="git log --all --graph --decorate --oneline"
 agregando tags a commits para encontarlos mas rapido:
 git tag -a "nombre" -m "resultado ....."  "copias el hash para el tag  4f0a0e0 "
 ejmplo: git tag -a v0.1 -m " resultado anterior de una version del curso" 84f8a2d
@@ -247,6 +249,17 @@ despues de esto los cambios relizados se chekan con el pull request
 en github, ahi hacemos la comparacion y solicitamos el merge de la rama.
 
 
+clase 14, fork
+fork sirve papra clonar el proyecto desde git hub, despues de clonar es necesario
+agrgarlo a la terminal de comando. usando el git clone copiando la url. 
+cono esto nos traemos el proyecto, y podemos mandar cambios pero estos deben ser autorizados.
+cuando el proyecto real se actualiza, el de nosotros no lo estara asi que se hace lo siguiente.
+creamos otro origen remoto pero en lugar de origin usamos upstream.
+
+git remote  add upstream "url nueva del repositorio actualizado" ; se crea
+para actualizar la informacion de mi terminal con el repositorio actualizado, 
+tomando en cuenta que esto es cuando trabajo como un externo en un proyecto.
+despues es necesario mandar esta nueva rama al master que tenemos.
 
 que tal va todo === que pasa con los cambios. 
 iniciamos de nuevo 21 de junio.
