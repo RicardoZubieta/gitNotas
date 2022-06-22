@@ -281,3 +281,87 @@ README.md es una buena practica, que sirve para la descrippcion del proyecto.
 
 link de la pagina de editor para el readme: 
 https://pandao.github.io/editor.md/en.html
+
+
+clase 18, GitHub pages: https://pages.github.com/
+
+verificar que el repositorio tenga :
+username.github.io
+para ver el link del repositorio tenemos que ir a settings, pages.
+ahi verificamos que lo que se muestre es la rama master.
+para motrar exactemente un archivo del repositorio se hace lo siguiente:
+https://ricardozubieta.github.io/gitNotas    : este mostrara el readme.
+https://ricardozubieta.github.io/gitNotas/blogpost.html   : este muestra el archivo html.
+
+
+clase 19, rebase, reorganizando el trabajo.
+rebase: es agarrar una rama donde se corrigio un error, pero se conserva la historia.
+
+creamos la nueva rama con git branch "nombre rama".
+ahi se hacen las modificaciones, y para conservar la historia y unir las ramas se hacelo siguiente:
+git rebase master ; este comando se hace dentro de la rama donde se hizo la correccion:
+
+por ejemplo;
+creo mi rama git branch experimento
+me posiciono en la rama experiemtno
+ahi hago mis historias y commits
+dentro de la rama experimento utilizo el comando 
+git rebase master para poder juntar las ramas.
+
+nota el rebase se hace tanto la rama experimento es decir
+la rama donde esta la correcion, y en la rama master.
+ primero debe hacerse en la rama donde se hace la correcion y luego en la rama masrter.
+ despues de combinar las historias procedemos a elimnar la rama creada 
+ para cooreccion de errores.
+ git branch -D "rama".
+
+ este procediemiento se utiliza para corregir el error en local, 
+ por lo tanto los cambios se mandan despues de hacer los rebase, 
+ y una vez hechos estando en git hub eliminamos la rama en local. nunca empujamos la rama
+ al origen git hub, la rama de correccion de errores.
+ el rebase es silencio, quiere decir que no quedara rastro de que se hizo, 
+ pero puede llegar a ocasionar conflictos si la rama master esta muy adelantada.
+
+ clase 20, git stash;
+ guarda cambios en memoria y recuperalos despues.
+
+ sirve cuando no tenemos la seguridad de enviar un cambio, y ya se modifico el archivo, 
+ utilizamos el git stash en lugar del add y el commit, al usarlo el archivo regresara a su estado anterior, 
+ aunque ya se haya guardado el documento.
+
+ para ver el cambio del stash
+ usamos git stash pop, si no queremos esos cambios solo usamos contrl z en el vcode, para regresar a la iformacion anterior y ahi si guardamos con 
+ control s, los cambios y si revisamos con git status noy modificacion en la terminal.
+
+ si queremos guardar el stash pordemos crear una nueva rama y guardarlo ahi:
+ ejemplo:
+ git stash
+ git stash list para ver que pasa
+ git stash branch "nombre de la rama nueva"
+ ya estando en la nueva rama podemos usar git status para ve rlos cambios, 
+ guardamos los cambios en la nueva rama.
+
+ nota: auqnue haya hecho cambios en mis archivos, y los haya guardado en los archivos vcode.
+ podemos usar el git stash en la terminal y asi recurar el head anterior. sin esos cambios.
+ para borrar el stash usamos: git stash drop.
+ de esta manera borramos los cambios.
+ sirve mas bien para cambios rapidos.
+
+ clase 21, git clean;
+ se utiliza para limpiar archivos de tu proyecto
+ no desados. 
+
+ comando; 
+ git status para ver los archivos basura que se agregaron de mas
+ git clean; no funciona solo hay que usar:
+ git clean --dry--run 
+ despues de que este comando muestre los archivos a borrar, los verificamos 
+ y hacemos el comando;
+ git clean -f ; srive para borrar los archivos no deseadoss..
+ con estos solo borramos archivos no carpetas.
+
+
+ clase 22; git cherry-pick ; sirve para traer commits viejos al head de un branch.
+
+ git log --oneline; forma corta de ver la historio de commits
+ git cherry-pick "pegar los datos del coommit a traer de otra rama"

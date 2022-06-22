@@ -1,0 +1,27 @@
+Esta es la hitorio de ricardo zubieta.
+en el año 2022 esta intentando aprender programacion, 
+como una opcion para incrementar sus fuentes de ingreso, 
+y no seguir la vida ordinaria de todos los mortales.
+
+se que es un camino dificil pero no imposible, sera que pueda
+lograr mis objetivos ??
+
+para efectos practicos estoy creando commits.
+
+
+experimento 1
+
+experimento 2.
+
+master 1.
+
+master 2.
+
+probaremos el stash y la creacion 
+<<<<<<< HEAD
+de ramas con stash y el cherry. si funciono.
+=======
+de ramas con stash y el cherry.
+agregarando mas commmits
+commite de pureba para el ejercicio
+>>>>>>> ramaPrueba
