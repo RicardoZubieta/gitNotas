@@ -319,4 +319,5 @@ la rama donde esta la correcion, y en la rama master.
  por lo tanto los cambios se mandan despues de hacer los rebase, 
  y una vez hechos estando en git hub eliminamos la rama en local. nunca empujamos la rama
  al origen git hub, la rama de correccion de errores.
- 
+ el rebase es silencio, quiere decir que no quedara rastro de que se hizo, 
+ pero puede llegar a ocasionar conflictos si la rama master esta muy adelantada.
