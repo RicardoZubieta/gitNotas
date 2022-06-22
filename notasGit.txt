@@ -359,3 +359,8 @@ la rama donde esta la correcion, y en la rama master.
  y hacemos el comando;
  git clean -f ; srive para borrar los archivos no deseadoss..
  con estos solo borramos archivos no carpetas.
+
+
+ clase 22; git cherry-pick ; sirve para traer commits viejos al head de un branch.
+
+ git log --oneline
