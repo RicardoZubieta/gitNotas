@@ -18,4 +18,4 @@ master 1.
 master 2.
 
 probaremos el stash y la creacion 
-de ramas con stash y el cherry.
+de ramas con stash y el cherry. si funciono.

@@ -363,4 +363,5 @@ la rama donde esta la correcion, y en la rama master.
 
  clase 22; git cherry-pick ; sirve para traer commits viejos al head de un branch.
 
- git log --oneline
+ git log --oneline; forma corta de ver la historio de commits
+ git cherry-pick "pegar los datos del coommit a traer de otra rama"
