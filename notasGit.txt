@@ -199,7 +199,7 @@ git log --all --graph --decorate --oneline; muestra todo mas comprimido.
 
 se pueden crear alias a los comandos usando:
 ejemplo;
-alis arbol="git log --all --graph --decorate --oneline"
+alias arbol="git log --all --graph --decorate --oneline"
 agregando tags a commits para encontarlos mas rapido:
 git tag -a "nombre" -m "resultado ....."  "copias el hash para el tag  4f0a0e0 "
 ejmplo: git tag -a v0.1 -m " resultado anterior de una version del curso" 84f8a2d
