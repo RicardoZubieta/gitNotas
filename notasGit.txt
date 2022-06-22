@@ -329,4 +329,6 @@ la rama donde esta la correcion, y en la rama master.
  utilizamos el git stash en lugar del add y el commit, al usarlo el archivo regresara a su estado anterior, 
  aunque ya se haya guardado el documento.
 
- 
+ para ver el cambio del stash
+ usamos git stash pop, si no queremos esos cambios solo usamos contrl z en el vcode, para regresar a la iformacion anterior y ahi si guardamos con 
+ control s, los cambios y si revisamos con git status noy modificacion en la terminal.
