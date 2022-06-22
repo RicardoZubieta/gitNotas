@@ -321,3 +321,12 @@ la rama donde esta la correcion, y en la rama master.
  al origen git hub, la rama de correccion de errores.
  el rebase es silencio, quiere decir que no quedara rastro de que se hizo, 
  pero puede llegar a ocasionar conflictos si la rama master esta muy adelantada.
+
+ clase 20, git stash;
+ guarda cambios en memoria y recuperalos despues.
+
+ sirve cuando no tenemos la seguridad de enviar un cambio, y ya se modifico el archivo, 
+ utilizamos el git stash en lugar del add y el commit, al usarlo el archivo regresara a su estado anterior, 
+ aunque ya se haya guardado el documento.
+
+ 
