@@ -9,4 +9,4 @@ Esta es una prueba para el editor, que nos srive para ver como quedaria este **r
 3; *buenas practicas*
 
 
- **FIN DEL CONTENIDO PRACTICO ** 🤖👨‍💻
+ **FIN DEL CONTENIDO PRACTICO **. 🤖👨‍💻

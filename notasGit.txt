@@ -292,3 +292,23 @@ ahi verificamos que lo que se muestre es la rama master.
 para motrar exactemente un archivo del repositorio se hace lo siguiente:
 https://ricardozubieta.github.io/gitNotas    : este mostrara el readme.
 https://ricardozubieta.github.io/gitNotas/blogpost.html   : este muestra el archivo html.
+
+
+clase 19, rebase, reorganizando el trabajo.
+rebase: es agarrar una rama donde se corrigio un error, pero se conserva la historia.
+
+creamos la nueva rama con git branch "nombre rama".
+ahi se hacen las modificaciones, y para conservar la historia y unir las ramas se hacelo siguiente:
+git rebase master ; este comando se hace dentro de la rama donde se hizo la correccion:
+
+por ejemplo;
+creo mi rama git branch experimento
+me posiciono en la rama experiemtno
+ahi hago mis historias y commits
+dentro de la rama experimento utilizo el comando 
+git rebase master para poder juntar las ramas.
+
+nota el rebase se hace tanto la rama experimento es decir
+la rama donde esta la correcion, y en la rama master.
+ primero debe hacerse en la rama donde se hace la correcion y luego en la rama masrter.
+ 
