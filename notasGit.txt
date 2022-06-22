@@ -79,6 +79,8 @@ git log --stat "sirve para ver cambios.
 
 */ notas 5 , clase 5,  git reset vs git rm/* 
 // documento copiado de la clase:
+
+rm "nombre del archivo" se pueden eliminar archivos.
 git rm
 Este comando nos ayuda a eliminar archivos de Git sin eliminar su historial del sistema de versiones.
 Esto quiere decir que si necesitamos recuperar el archivo solo debemos “viajar en el tiempo” y recuperar
