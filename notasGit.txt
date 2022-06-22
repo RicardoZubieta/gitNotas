@@ -314,4 +314,9 @@ la rama donde esta la correcion, y en la rama master.
  despues de combinar las historias procedemos a elimnar la rama creada 
  para cooreccion de errores.
  git branch -D "rama".
+
+ este procediemiento se utiliza para corregir el error en local, 
+ por lo tanto los cambios se mandan despues de hacer los rebase, 
+ y una vez hechos estando en git hub eliminamos la rama en local. nunca empujamos la rama
+ al origen git hub, la rama de correccion de errores.
  
