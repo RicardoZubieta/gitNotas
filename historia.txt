@@ -16,3 +16,6 @@ experimento 2.
 master 1.
 
 master 2.
+
+probaremos el stash y la creacion 
+de ramas con stash y el cherry.
